@@ -1,12 +1,13 @@
-import java.util.Arrays;
+package Week2;
+
 import java.util.Scanner;
 
 /**
  * Lab Session 2
- * LongestCommonSubsequence class is a program that will determine the longest string
+ * Week2.LongestCommonSubsequence class is a program that will determine the longest string
  * that is a subsequence of two stings input by the user (in the command line).
  * The program applies a brute force solution to finding the subsequence.
- *  Uses the ArrayBag class for the Bag implementation.
+ *  Uses the Week2.ArrayBag class for the Bag implementation.
  */
 
 public class LongestCommonSubsequence {
@@ -29,7 +30,7 @@ public class LongestCommonSubsequence {
         String strSecond = input.next();
         System.out.println("\n");
 
-        // TODO (2): Add code to create an instance of the Bag (ArrayBag) then add the initial (first) string:
+        // TODO (2): Add code to create an instance of the Bag (Week2.ArrayBag) then add the initial (first) string:
         testBag.addNewEntry(strFirst);
 
 

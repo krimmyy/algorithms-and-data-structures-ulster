@@ -1,6 +1,8 @@
+package Week2;
+
 /**
  * COM410 Software Development II
- * BagTest class used to test the operation of the bag class
+ * Week2.BagTest class used to test the operation of the bag class
  */
 public class BagTest {
 
@@ -9,7 +11,7 @@ public class BagTest {
      */
     public static void main(String[] args) {
 
-        // Create an object of ArrayBag<String>
+        // Create an object of Week2.ArrayBag<String>
         LinkedBag<String> testArrayBag = new LinkedBag<String>();
         System.out.println("------------------------------------------------------");
         System.out.println("BAG TEST:");
