@@ -93,7 +93,8 @@ public class BagTest {
      * @param myBag The bag being reported upon.
      */
     public static void bagStatusReport(LinkedBag<String> myBag) {
-        System.out.println("Bag contents: " + myBag);
+        //System.out.println("Bag contents: " + myBag);
+        myBag.display();
         System.out.println("Size: " + myBag.getCurrentSize());
         System.out.println("Is empty: " + myBag.isEmpty());
         System.out.println("Frequency of A: " + myBag.getFrequencyOf("A"));

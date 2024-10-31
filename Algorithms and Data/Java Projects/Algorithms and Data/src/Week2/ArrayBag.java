@@ -139,6 +139,17 @@ public final class ArrayBag<T> implements BagInterface<T> {
         return strResult;
     }
 
+    public void display() {
+        System.out.println("\n*** Displaying the Bag ***");
+        displayArray(0, numberOfEntries - 1);
+        System.out.println("******\n");
+    }
+
+    private void displayArray(int first, int last) {
+        System.out.println(bag[first]);
+        if (first < last) displayArray(first + 1, last);
+    }
+
     public static void main(String[] args) {
         ArrayBag<String> bagOfNames = new ArrayBag<String>(5);
 

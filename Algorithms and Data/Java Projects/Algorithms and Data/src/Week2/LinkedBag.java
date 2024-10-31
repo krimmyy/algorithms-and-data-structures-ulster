@@ -89,6 +89,19 @@ public final class LinkedBag<T> implements BagInterface<T> {
         return resultArray;
     }
 
+
+    public void display() {
+        System.out.println("\n*** Displaying the Bag ***");
+        displayChain(firstNode);
+        System.out.println("******\n");
+    }
+    private void displayChain(MyNode<T> nodeOne) {
+        if (nodeOne != null) {
+            System.out.println(nodeOne.getData());
+            displayChain(nodeOne.getNext());
+        }
+    }
+
     public String toString() {
         MyNode<T> currentNode = firstNode;
         String result = "Bag[ ";

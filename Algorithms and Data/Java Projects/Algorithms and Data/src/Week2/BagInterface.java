@@ -62,4 +62,8 @@ public interface BagInterface<T> {
 
     @return - (T[]) an array of size number of elements, containing all contents of the bag
      */
+
+    public void display();
+    /* display all elements in the bag
+     */
 }
