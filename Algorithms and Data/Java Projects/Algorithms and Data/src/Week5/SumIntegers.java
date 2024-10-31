@@ -2,7 +2,7 @@ package Week5;
 
 public class SumIntegers {
 
-    private static long sum_A(int n) {
+    public static long sum_A(int n) {
         long sum = 0;
         for (int i = 1; i <= n ; i++) {
             sum = sum + i;
@@ -10,7 +10,7 @@ public class SumIntegers {
         return sum;
     }
 
-    private static long sum_B(int n) {
+    public static long sum_B(int n) {
         long sum = 0;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
@@ -20,7 +20,7 @@ public class SumIntegers {
         return sum;
     }
 
-    private static long sum_C(int n) {
+    public static long sum_C(int n) {
         long sum = 0;
         sum = n * (n + 1) / 2;
         return sum;
