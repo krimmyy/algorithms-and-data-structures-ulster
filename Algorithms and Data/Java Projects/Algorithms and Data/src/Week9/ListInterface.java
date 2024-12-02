@@ -61,7 +61,7 @@ public interface ListInterface<T> {
     @throws IndexOutOfBounds if either position < 1 or position > getLength()
      */
 
-    public T toArray();
+    public T[] toArray();
     /*  Retrieves all entries in this list in the order in which they appear in the list.
 
     @return A newly allocated array of all the entries in the list. If the list is empty, the returned array is empty.
