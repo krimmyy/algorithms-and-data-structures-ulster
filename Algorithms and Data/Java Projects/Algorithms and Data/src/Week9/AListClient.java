@@ -3,8 +3,9 @@ package Week9;
 import java.util.Arrays;
 
 public class AListClient {
+
     public static void main(String[] args) {
-        AListArray myList = new AListArray();
+        AListChain myList = new AListChain();
 
         myList.add(1);
         myList.add(2);
@@ -23,6 +24,7 @@ public class AListClient {
         System.out.println(Arrays.toString(myList.toArray()));
 
         int value = (int)myList.getEntry(3);
+        System.out.println("Value retrieved is " + value);
 
 
         System.out.println("List of " + myList.getLength() + " elements contains 22 is " + myList.contains(22));
