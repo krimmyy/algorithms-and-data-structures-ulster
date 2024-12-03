@@ -1,6 +1,4 @@
-package Week9;
-
-import java.util.Arrays;
+package Week10;
 
 public class AListChain<T> implements ListInterface<T> {
     private MyNode firstNode;
@@ -112,6 +110,17 @@ public class AListChain<T> implements ListInterface<T> {
         return found;
     }
 
+    public boolean contains_r(T anEntry) {
+        return contains_r_r(firstNode, anEntry);
+    }
+
+    private boolean contains_r_r(MyNode fromNode, T anEntry) {
+        boolean found;
+        if (fromNode == null) return false;
+        else if (fromNode.getData().equals(anEntry)) found = true;
+        else found = contains_r_r(fromNode.getNext(), anEntry);
+        return found;
+    }
 
     public int getLength() {
         return numberOfEntries;
